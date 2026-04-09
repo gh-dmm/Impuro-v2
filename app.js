@@ -98,19 +98,20 @@ if (x > 100) {
   personaje.style.left = x + "%";
 
   // ANIMACION SIMULADA
+  /*
   estado = !estado;
   personaje.className = estado ? "figura triangulo" : "figura";
-
+*/
   // FUTURO (sprites reales)
-  /*if (estado) {
-  personaje.src ="caminar1.png";
+  if (estado) {
+  personaje.src ="caminando1.png";
 } else {
- /personaje.src ="caminar2.png";}
+ /personaje.src ="caminando2.png";}
  if (dir === -1) {
   personaje.style.transform = "translateX(-50%) scaleX(-1)";
 } else {
   personaje.style.transform = "translateX(-50%) scaleX(1)";
-}*/
+}
 }
 
 // ===== ACCION (ENTER) =====
