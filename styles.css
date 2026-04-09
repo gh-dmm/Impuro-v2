@@ -1,6 +1,22 @@
 :root{
   --altura-figura:100px;
 }
+#ui-top {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  display: flex;
+  gap: 20px;
+
+  font-size: 18px;
+  font-weight: bold;
+  color: #d4af37;
+  text-shadow: 0 0 10px #d4af37;
+
+  z-index: 999;
+}
 body {
   margin: 0;
   overflow: hidden;
