@@ -153,6 +153,6 @@ button {
   bottom: 35%;
   left: 50%;
   width: relative;
-  height:var(--altura-figura);
+  height: var(--altura-figura);
   transform: translateX(-50%);
 }
