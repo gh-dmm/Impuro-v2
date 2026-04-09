@@ -1,13 +1,9 @@
 let puntaje = 0;
 let nivel = 1;
-window.onload = () => {
-  puntaje = parseInt(localStorage.getItem("puntaje")) || 0;
+puntaje = parseInt(localStorage.getItem("puntaje")) || 0;
+
 calcularNivel();
 actualizarUI();
-}
-function calcularNivel() {
-  nivel = Math.floor(puntaje / 100) + 1;
-}
 
 function actualizarUI() {
   document.getElementById("score").innerText = "Puntaje: " + puntaje;
