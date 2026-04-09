@@ -1,5 +1,5 @@
 :root{
-  --altura-figura:100px;
+  --altura-figura:60px;
 }
 #ui-top {
   position: fixed;
@@ -148,10 +148,11 @@ button {
   border: 2px solid #d4af37;
   display: none;
 }
-/*#personaje {
+#personaje {
   position: absolute;
   bottom: 35%;
   left: 50%;
-  width: 60px;
+  width: relative;
+  height:var(--altura-figura);
   transform: translateX(-50%);
-}*/
+}
