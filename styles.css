@@ -150,7 +150,7 @@ button {
 }
 #personaje {
   position: absolute;
-  bottom: 35%;
+  top: 61%;
   left: 50%;
   height: var(--altura-figura);
   transform: translateX(-50%);
