@@ -1,0 +1,141 @@
+:root{
+  --altura-figura:100px;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: #f5e6c8;
+}
+
+.pantalla {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+}
+
+#pantalla2 {
+  transform: translateX(100%);
+}
+/*
+#pantalla2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+
+  overflow: hidden;
+}
+*/
+#fondo-escena {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  /* 🔥 aquí está tu lógica */
+  height: calc(61% + var(--alturapersonaje));
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: -1;
+}
+#particles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.contenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+  color: #d4af37;
+  text-shadow: 0 0 10px #d4af37, 0 0 30px #d4af37;
+}
+
+.neon {
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  padding: 10px 20px;
+  margin: 20px;
+  display: inline-block;
+  box-shadow: 0 0 10px #d4af37, 0 0 20px #d4af37;
+}
+
+button {
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid #d4af35;
+  color: #d4af37;
+  cursor: pointer;
+}
+
+.controles {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.controles button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.figura {
+  position: absolute;
+  top: 61%;
+  left: 40%;
+  width: 100px;
+  height: var(--altura-figura);
+  background: #d4af37;
+}
+
+.triangulo {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #d4af37;
+  background: none;
+}
+.piso {
+  position: absolute;
+  top: calc(61% + var(--altura-figura));
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: black;
+}
+.dialogo {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 40%;
+  padding: 20px;
+  background: #f5e6c8;
+  border: 2px solid #d4af37;
+  display: none;
+}
+/*#personaje {
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+  width: 60px;
+  transform: translateX(-50%);
+}*/
