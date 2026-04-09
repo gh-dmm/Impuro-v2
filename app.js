@@ -1,3 +1,34 @@
+let puntaje = 0;
+let nivel = 1;
+window.onload = () => {
+  puntaje = parseInt(localStorage.getItem("puntaje")) || 0;
+calcularNivel();
+actualizarUI();
+}
+function calcularNivel() {
+  nivel = Math.floor(puntaje / 100) + 1;
+}
+
+function actualizarUI() {
+  document.getElementById("score").innerText = "Puntaje: " + puntaje;
+  document.getElementById("nivel").innerText = "Nivel: " + nivel;
+}
+function sumarPuntos(valor) {
+  puntaje += valor;
+
+  calcularNivel();
+  localStorage.setItem("puntaje", puntaje);
+
+  actualizarUI();
+}
+function restarPuntos(valor) {
+  puntaje -= valor;
+
+  calcularNivel();
+  localStorage.setItem("puntaje", puntaje);
+
+  actualizarUI();
+}
 // ===== PARTICULAS =====
 let moviendo = 0;
 let fondos = [
