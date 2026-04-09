@@ -100,9 +100,9 @@ if (x > 100) {
 */
   // FUTURO (sprites reales)
   if (estado) {
-  personaje.src ="Caminando1.png";
+  personaje.src = "Caminando1.png";
 } else {
- personaje.src ="Caminando2.jpg";}
+ personaje.src = "Caminando2.jpg";}
  if (dir === -1) {
   personaje.style.transform = "translateX(-50%) scaleX(-1)";
 } else {
